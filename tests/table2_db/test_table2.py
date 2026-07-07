@@ -9,5 +9,5 @@ load_dotenv()
 
 def test_compare_df(read_data):
     source, target = read_data
-    assert len(source) == len(target), "source and target is not matching"
+    assert source == target, f"source and target is not matching, source count: {len(source)} and target count : {len(target)}"
 

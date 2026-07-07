@@ -1,6 +1,6 @@
 .env
 inputfile/
-.venv/
+venv/
 .pytest_cache/
 sample.py
 

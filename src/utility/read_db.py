@@ -23,9 +23,11 @@ def read_db(config_data, dir_path):
         if tranformation == "Y":
            query = read_query(dir_path)
            df = pd.read_sql_query(query, engine)
+           
         else:
            query1 = f"""select * from {config_data['table']}"""
            df = pd.read_sql_query(query1, engine)
+           
            
     if type == "snowflake":
         pass

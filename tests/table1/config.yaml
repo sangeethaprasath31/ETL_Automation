@@ -1,0 +1,8 @@
+source: 
+    type: csv
+    file_path: C:\Users\91875\etl_automation\input_files\customer_with_header.csv
+    header: None
+target: 
+    type: csv
+    file_path: C:\Users\91875\etl_automation\input_files\customer_with_header_t.csv
+    header: None

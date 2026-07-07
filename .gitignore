@@ -1,0 +1,6 @@
+.env
+inputfile/
+.venv/
+.pytest_cache/
+sample.py
+

@@ -1,0 +1,1 @@
+SELECT  * FROM [silver].[Customer_Clean]

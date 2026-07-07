@@ -23,13 +23,18 @@ def read_db(config_data, dir_path):
         if tranformation == "Y":
            query = read_query(dir_path)
            df = pd.read_sql_query(query, engine)
+           engine.dispose()
+       
            
         else:
-           query1 = f"""select * from {config_data['table']}"""
+           query1 = f"""select * from {config_data['table']} where CustomerID = 1"""
            df = pd.read_sql_query(query1, engine)
-           
-           
+           engine.dispose()
+         
+          
+       
     if type == "snowflake":
         pass
-  
-        return df
+          
+
+    return df

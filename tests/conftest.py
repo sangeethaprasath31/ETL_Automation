@@ -31,4 +31,4 @@ def read_data(read_config, request):
     else:
         target_df = read_db(target_data, dir_path)
        
-    return source_df, target_df
+    return source_df, target_df, config_data

@@ -1,1 +1,1 @@
-SELECT  * FROM [silver].[Customer_Clean]
+SELECT  * FROM [bronze].[CustomerLanding] where CustomerID = 1

@@ -24,10 +24,9 @@ def read_db(config_data, dir_path):
            query = read_query(dir_path)
            df = pd.read_sql_query(query, engine)
            engine.dispose()
-       
-           
+                  
         else:
-           query1 = f"""select * from {config_data['table']} where CustomerID = 1"""
+           query1 = f"""select * from {config_data['table']}"""
            df = pd.read_sql_query(query1, engine)
            engine.dispose()
          

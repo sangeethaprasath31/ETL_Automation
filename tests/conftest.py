@@ -4,6 +4,9 @@ import os
 import yaml
 from src.utility.read_file import read_file
 from src.utility.read_db import read_db
+import logging 
+from datetime import datetime
+
 
 
 @pytest.fixture(scope="module")
@@ -32,3 +35,15 @@ def read_data(read_config, request):
         target_df = read_db(target_data, dir_path)
        
     return source_df, target_df, config_data
+
+os.makedirs("logs", exist_ok=True)
+
+log_file = f"logs\log_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
+
+print("log file", log_file)
+
+logging.basicConfig(
+    filename=log_file,
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+)

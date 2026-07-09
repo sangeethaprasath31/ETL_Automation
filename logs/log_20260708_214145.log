@@ -1,0 +1,5 @@
+2026-07-08 21:41:46,875 - INFO - count validation
+2026-07-08 21:41:46,876 - INFO -  source and target count is matching: src_count 5 and tgt_count 5
+2026-07-08 21:41:46,876 - INFO - Row count validation status: Pass
+2026-07-08 21:41:46,882 - INFO - Source duplicate count: 0
+2026-07-08 21:41:46,888 - INFO - Target duplicate count: 0
